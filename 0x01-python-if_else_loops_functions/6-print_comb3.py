@@ -6,6 +6,9 @@ for i in range(0, 100):
     if tens == ones:
         continue
     while tens < ones:
-        print(f"{i:02}")
+        if i == 89:
+            print(f"{i}")
+        else:
+            print(f"{i:02}", end = ", ")
         i += 1
         break
