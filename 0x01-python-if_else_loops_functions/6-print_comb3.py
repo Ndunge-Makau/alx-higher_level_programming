@@ -7,7 +7,7 @@ for i in range(0, 100):
         continue
     while tens < ones:
         if i == 89:
-            print(f"{i}")
+            print(f"{i:02}")
         else:
             print(f"{i:02}", end=", ")
         i += 1
