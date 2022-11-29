@@ -7,8 +7,8 @@ for i in range(0, 100):
         continue
     while tens < ones:
         if i == 89:
-            print(f"{i:02}")
+            print("{}".format(i))
         else:
-            print(f"{i:02}", end=", ")
+            print("{:02}".format(i), end=", ")
         i += 1
         break
