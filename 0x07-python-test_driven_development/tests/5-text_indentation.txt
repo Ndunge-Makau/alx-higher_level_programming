@@ -1,0 +1,22 @@
+==================================
+The text_indentation module
+==================================
+
+Using the text_indentation function:
+Prints a text with 2 new lines after each of these characters: ., ? and :
+
+
+>>> def text_indentation()
+
+
+>>> def text_indentation("My. String. Is. Here")
+
+
+>>> def text_indentation(123)
+
+
+>>> def text_indentation(My string has none of the characters")
+
+
+>>> def text_indentation("Hello: Your name?")
+
