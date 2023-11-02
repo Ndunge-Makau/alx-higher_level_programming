@@ -5,18 +5,35 @@ The text_indentation module
 Using the text_indentation function:
 Prints a text with 2 new lines after each of these characters: ., ? and :
 
-
->>> def text_indentation()
-
-
->>> def text_indentation("My. String. Is. Here")
+>>> text_indentation = __import__('5-text_indentation').text_indentation
 
 
->>> def text_indentation(123)
+>>> text_indentation()
+Traceback (most recent call last):
+TypeError: text_indentation() missing 1 required positional argument: 'text'
 
 
->>> def text_indentation(My string has none of the characters")
+>>> text_indentation("My. String. Is. Here")
+My.
+
+ String.
+
+ Is.
+
+ Here
 
 
->>> def text_indentation("Hello: Your name?")
+>>> text_indentation(123)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+
+>>> text_indentation(My string has none of the characters")
+My string has none of the characters
+
+>>> text_indentation("Hello: Your name?")
+Hello:
+
+ Your name?
+
 
