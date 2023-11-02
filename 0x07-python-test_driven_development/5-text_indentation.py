@@ -7,13 +7,16 @@ Defines the text_indentation module
 
 def text_indentation(text):
     """
-     prints a text with 2 new lines after each of these characters: 
+     prints a text with 2 new lines after each of these characters
      ., ? and :
      """
     if type(text) is not str:
         raise TypeError("text must be a string")
-    for i in text:
-        print(i, end="")
-        if (i == "." or i == "?" or i == ":"):
-            print()
-            print()
+
+    for i in range(len(text)):
+        if (text[i] in ".?:"):
+            print(text[i], end="\n\n")
+        else:
+            if (text[i - 1] in ".?:") and i != 0:
+                continue
+            print(text[i], end="")
