@@ -32,3 +32,22 @@ Write a class MyList that inherits from list:
 12
 
 
+>>> print(my_list)
+[28, 5, 34]
+
+
+>>> my_list.append(-4)
+
+
+>>> my_list.print_sorted()
+[-4, 5, 28, 34]
+
+
+>>> new_list = MyList()
+
+
+>>> new_list.print_sorted()
+[]
+
+
+
