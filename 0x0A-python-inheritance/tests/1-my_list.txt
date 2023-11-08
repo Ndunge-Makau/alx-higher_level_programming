@@ -1,0 +1,34 @@
+=============================
+
+The 1-my_list.py module 
+
+=============================
+
+Write a class MyList that inherits from list:
+
+>>> MyList = __import__('1-my_list').MyList
+
+
+>>> my_list = MyList()
+
+
+>>> my_list.append(28)
+
+
+>>> my_list.append(5)
+
+
+>>> my_list.append(34)
+
+
+>>> my_list.append(12)
+
+
+>>> my_list.print_sorted()
+[5, 12, 28, 34]
+
+
+>>> my_list.pop(3)
+12
+
+
