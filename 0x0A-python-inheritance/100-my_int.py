@@ -6,6 +6,7 @@
 
 
 class MyInt(int):
+    """Class MyInt inheriting from the int class."""
     def __init__(self, number):
         self.number = number
 
