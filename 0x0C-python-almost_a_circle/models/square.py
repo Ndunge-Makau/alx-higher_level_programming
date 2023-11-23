@@ -41,3 +41,11 @@ class Square(Rectangle):
                 setattr(self, my_list[i], args[i])
         except IndexError:
             pass
+
+    def to_dictionary(self):
+        """Returns the dictionary representation of a Square."""
+        my_dict = {}
+        atts = ['id', 'size', 'x', 'y']
+        for i in range(len(atts)):
+            my_dict.update({atts[i]: getattr(self, atts[i])})
+        return my_dict
