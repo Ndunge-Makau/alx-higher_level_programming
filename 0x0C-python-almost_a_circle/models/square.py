@@ -28,3 +28,16 @@ class Square(Rectangle):
         """Print representation."""
         return ("[Square] ({}) {}/{} - {}".format(
                 self.id, self.x, self.y, self.size))
+
+    def update(self, *args, **kwargs):
+        """Assigns attributes."""
+        if len(args) == 0:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
+        try:
+            my_list = ["id", "size", "x", "y"]
+
+            for i in range(len(args)):
+                setattr(self, my_list[i], args[i])
+        except IndexError:
+            pass
