@@ -88,10 +88,9 @@ class Rectangle(Base):
     def update(self, *args):
         """Assigns an argument to each attribute."""
         try:
-            self.id = args[0]
-            self.__width = args[1]
-            self.__height = args[2]
-            self.__x = args[3]
-            self.__y = args[4]
+            my_list = ["id", "width", "height", "x", "y"]
+
+            for i in range(len(args)):
+                setattr(self, my_list[i], args[i])
         except IndexError:
             pass
