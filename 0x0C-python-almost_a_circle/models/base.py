@@ -31,7 +31,6 @@ class Base:
             with open("{}.json".format(cls.__name__), 'w') as my_file:
                 my_file.write("[]")
         with open("{}.json".format(cls.__name__), 'w') as my_file:
-            my_string = ""
-            for i in list_objs:
-                my_string += Base.to_json_string(i.to_dictionary())
-            my_file.write(my_string)
+            my_list = []
+            my_list.extend(i.to_dictionary() for i in list_objs)
+            my_file.write(Base.to_json_string(my_list))
