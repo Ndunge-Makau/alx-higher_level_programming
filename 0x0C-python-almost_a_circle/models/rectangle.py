@@ -85,8 +85,11 @@ class Rectangle(Base):
                 .format(self.id, self.__x, self.__y,
                         self.__width, self.__height))
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Assigns an argument to each attribute."""
+        if len(args) == 0:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
         try:
             my_list = ["id", "width", "height", "x", "y"]
 
