@@ -97,3 +97,7 @@ class Rectangle(Base):
                 setattr(self, my_list[i], args[i])
         except IndexError:
             pass
+
+    def to_dictionary(self):
+        """Returns the dictionary representation of a Rectangle."""
+        return self.__dict__
