@@ -30,7 +30,8 @@ class Base:
         if list_objs is None:
             with open("{}.json".format(cls.__name__), 'w') as my_file:
                 my_file.write("[]")
-        with open("{}.json".format(cls.__name__), 'w') as my_file:
-            my_list = []
-            my_list.extend(i.to_dictionary() for i in list_objs)
-            my_file.write(Base.to_json_string(my_list))
+        else:
+            with open("{}.json".format(cls.__name__), 'w') as my_file:
+                my_list = []
+                my_list.extend(i.to_dictionary() for i in list_objs)
+                my_file.write(Base.to_json_string(my_list))
