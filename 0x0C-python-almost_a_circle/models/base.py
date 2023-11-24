@@ -59,6 +59,10 @@ class Base:
         """Returns a list of instances."""
         try:
             with open("{}.json".format(cls.__name__), 'r') as my_file:
-                return json.load(my_file)
+                my_list = Base.from_json_string(my_file.read())
+                instance_list = []
+                for i in my_list:
+                    instance_list.append(cls.create(**i))
+                return instance_list
         except FileNotFoundError:
             return []
