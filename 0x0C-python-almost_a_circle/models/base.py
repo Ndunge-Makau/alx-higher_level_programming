@@ -35,3 +35,11 @@ class Base:
                 my_list = []
                 my_list.extend(i.to_dictionary() for i in list_objs)
                 my_file.write(Base.to_json_string(my_list))
+
+    def from_json_string(json_string):
+        """Returns the list of the JSON string representation json_string."""
+        my_list = []
+        if json_string is None or "":
+            return my_list
+        else:
+            return ([json.loads(json_string)])
