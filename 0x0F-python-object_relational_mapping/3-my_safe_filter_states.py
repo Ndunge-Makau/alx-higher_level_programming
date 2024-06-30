@@ -9,13 +9,13 @@ from sys import argv
 
 
 if __name__ == '__main__':
-    db = MySQLdb.connect("localhost", argv[1], '', argv[3], port=3306)
+    db = MySQLdb.connect("localhost", argv[1], argv[2], argv[3], port=3306)
     cur = db.cursor()
-    if len(argv) == 5:
-        cur.execute("SELECT * FROM states\
-                    WHERE name LIKE BINARY '{}'".format(argv[4]))
-        rows = cur.fetchall()
-        for row in rows:
-            print(row)
+    my_state = argv[4]
+    cur.execute("SELECT * FROM states\
+            WHERE name LIKE %s", (my_state, ))
+    rows = cur.fetchall()
+    for row in rows:
+        print(row)
     cur.close()
     db.close()
