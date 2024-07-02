@@ -2,12 +2,10 @@
 
 """Lists all State objects from the database hbtn_0e_6_usa"""
 
-from sqlalchemy.ext.declarative import declarative_base
 import sys
 from model_state import Base, State
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-
 
 if __name__ == "__main__":
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
@@ -19,3 +17,4 @@ if __name__ == "__main__":
 
     for state in session.query(State).order_by(State.id):
         print("{}: {}".format(state.id, state.name))
+
