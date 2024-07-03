@@ -15,4 +15,7 @@ if __name__ == "__main__":
     session = Session(bind=engine)
 
     my_query = session.query(State).first()
-    print(f"{my_query.id}: {my_query.name}")
+    if my_query is None:
+        print("Nothing")
+    else:
+        print(f"{my_query.id}: {my_query.name}")
