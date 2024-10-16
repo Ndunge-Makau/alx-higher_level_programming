@@ -78,5 +78,16 @@ Please test your script in the sandbox provided, using the web server running on
 File: <b>4-header.sh</b>
 
 
+### 5. cURL POST parameters
+
+Write a Bash script that takes in a URL, sends a POST request to the passed URL, and displays the body of the response
+
+* A variable email must be sent with the value test@gmail.com
+* A variable subject must be sent with the value I will always be here for PLD
+* You have to use curl
+Please test your script in the sandbox provided, using the web server running on port 5000
+
+File: <b>5-post_params.sh</b>
+
 
 
