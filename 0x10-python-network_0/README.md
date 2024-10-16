@@ -46,3 +46,13 @@ Please test your script in the sandbox provided, using the web server running on
 
 File: <b>1-body.sh</b>
 
+
+### 2. cURL Method
+
+Write a Bash script that sends a DELETE request to the URL passed as the first argument and displays the body of the response
+
+* You have to use curl
+Please test your script in the sandbox provided, using the web server running on port 5000
+
+File: <b>2-delete.sh</b>
+
