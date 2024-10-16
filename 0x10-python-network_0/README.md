@@ -67,4 +67,16 @@ Please test your script in the sandbox provided, using the web server running on
 File: <b>3-methods.sh</b>
 
 
+### 4. cURL headers
+
+Write a Bash script that takes in a URL as an argument, sends a GET request to the URL, and displays the body of the response
+
+* A header variable X-School-User-Id must be sent with the value 98
+* You have to use curl
+Please test your script in the sandbox provided, using the web server running on port 5000
+
+File: <b>4-header.sh</b>
+
+
+
 
