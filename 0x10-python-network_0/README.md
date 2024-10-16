@@ -56,3 +56,15 @@ Please test your script in the sandbox provided, using the web server running on
 
 File: <b>2-delete.sh</b>
 
+
+### 3. cURL only methods
+
+Write a Bash script that takes in a URL and displays all HTTP methods the server will accept.
+
+* You have to use curl
+Please test your script in the sandbox provided, using the web server running on port 5000
+
+File: <b>3-methods.sh</b>
+
+
+
