@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/python3
 
 """Defines find_peak function"""
 
