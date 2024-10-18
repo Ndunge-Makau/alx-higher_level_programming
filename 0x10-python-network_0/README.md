@@ -109,3 +109,16 @@ Write a function that finds a peak in a list of unsorted integers.
 File: <b>6-peak.py, 6-peak.txt</b>
 
 
+### 7. Only status code
+
+Write a Bash script that sends a request to a URL passed as an argument, and displays only the status code of the response.
+
+* You are not allowed to use any pipe, redirection, etc.
+* You are not allowed to use ; and &&
+* You have to use curl
+Please test your script in the sandbox provided, using the web server running on port 5000
+
+File: <b>100-status_code.sh</b>
+
+
+###
