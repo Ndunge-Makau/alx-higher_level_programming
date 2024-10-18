@@ -121,4 +121,14 @@ Please test your script in the sandbox provided, using the web server running on
 File: <b>100-status_code.sh</b>
 
 
-###
+### 8. cURL a JSON file
+
+Write a Bash script that sends a JSON POST request to a URL passed as the first argument, and displays the body of the response.
+
+* Your script must send a POST request with the contents of a file, passed with the filename as the second argument of the script, in the body of the request
+* You have to use curl
+Please test your scripts in the sandbox provided, using the web server running on port 5000
+
+File: <b>101-post_json.sh</b>
+
+
