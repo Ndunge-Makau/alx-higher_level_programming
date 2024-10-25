@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Displays the value of the X-Request-Id found in the header of the response.
+"""Displays the X-Request-Id header variable of a request to a given URL.
 Usage: ./1-hbtn_header.py <URL>
 """
 
