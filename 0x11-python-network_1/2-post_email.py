@@ -7,6 +7,7 @@
 import sys
 import urllib.parse
 import urllib.request
+import urllib.error
 
 if __name__ == '__main__':
 
@@ -14,7 +15,15 @@ if __name__ == '__main__':
     values = {"email": sys.argv[2]}
 
     data = urllib.parse.urlencode(values).encode("ascii")
-    request = urllib.request.Request(url, data, method="POST")
+    request = urllib.request.Request(url, data)
 
-    with urllib.request.urlopen(request) as response:
-        print(response.read().decode("utf-8"))
+    try:
+        with urllib.request.urlopen(request) as response:
+            print(response.read().decode('utf-8'))
+    except urllib.error.URLError as e:
+        url = sys.argv[1] + '/post_email'
+        values = {"email": sys.argv[2]}
+        data = urllib.parse.urlencode(values).encode("ascii")
+        request = urllib.request.Request(url, data)
+        with urllib.request.urlopen(request) as response:
+            print(response.read().decode('utf-8'))
