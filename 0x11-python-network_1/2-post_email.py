@@ -5,6 +5,7 @@
 """
 
 import sys
+import urllib.parse
 import urllib.request
 
 if __name__ == '__main__':
@@ -13,7 +14,7 @@ if __name__ == '__main__':
 
     data = (urllib.parse.urlencode(values)).encode('ascii')
 
-    request = urllib.request.Request(url, data)
+    myRequest = urllib.request.Request(url, data)
 
-    with urllib.request.urlopen(request) as response:
+    with urllib.request.urlopen(myRequest) as response:
         print(response.read().decode('utf-8'))
