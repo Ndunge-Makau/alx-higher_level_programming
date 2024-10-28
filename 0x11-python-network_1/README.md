@@ -67,3 +67,14 @@ Please test your script in the sandbox provided, using the web server running on
 
 File: <b>3-error_code.py</b>
 
+
+### 4. What's my status? #1
+
+Write a Python script that fetches https://alx-intranet.hbtn.io/status
+
+* You must use the package requests
+* You are not allow to import packages other than requests
+* The body of the response must be display like the following example (tabulation before -)
+
+File: <b>4-hbtn_status.py</b>
+
