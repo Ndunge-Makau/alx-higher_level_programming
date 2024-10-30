@@ -20,4 +20,4 @@ if __name__ == '__main__':
                                   get('author').get('name')))
 
     except Exception as e:
-        print(e)
+        pass
