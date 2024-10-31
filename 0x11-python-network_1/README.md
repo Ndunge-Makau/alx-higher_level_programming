@@ -79,6 +79,18 @@ Write a Python script that fetches https://alx-intranet.hbtn.io/status
 File: <b>4-hbtn_status.py</b>
 
 
+### 5. Response header value #1
+
+Write a Python script that takes in a URL, sends a request to the URL and displays the value of the variable X-Request-Id in the response header
+
+You must use the packages requests and sys
+You are not allow to import other packages than requests and sys
+The value of this variable is different for each request
+You don’t need to check script arguments (number and type)
+
+File: <b>5-hbtn_header.py</b>
+
+                                                                                                                   
 ### 6. POST an email #1
 
 Write a Python script that takes in a URL and an email address, sends a POST request to the passed URL with the email as a parameter, and finally displays the body of the response.
